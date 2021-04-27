@@ -6,7 +6,6 @@ using namespace std;
 
 int n, xi, yi, xf, yf;
 char L[101][101];
-struct {int x,y,d,p;} Q[10000], CM[200];
 
 void Initialize(){
     int i, j, k, l, p;
@@ -24,7 +23,7 @@ void Initialize(){
         else 
 		    for (p=1; p<=i; p++) {if (rand()%100 > 10) L[p][l]='#';  }
     }
-    xi= 1; yi = rand()%(n-2)+2;  xf = rand()%(n-2)+2;  yf = n;
+    xi= rand()%(n-2)+2; yi = rand()%(n-2)+2;  xf = rand()%(n-2)+2;  yf = n;
     L[xi][yi] = 'A';  L[xf][yf]='B';
 }
 
