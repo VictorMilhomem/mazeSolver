@@ -78,7 +78,7 @@ class Maze():
         return result
 
 
-    def solve(self):
+    def solve(self, algorithm):
         """Finds a solution to maze, if one exists."""
 
         # Keep track of number of states explored
@@ -86,7 +86,12 @@ class Maze():
 
         # Initialize frontier to just the starting position
         start = Node(state=self.start, parent=None, action=None)
-        frontier = StackFrontier()
+        if algorithm == 1:
+            frontier = StackFrontier()
+        elif algorithm == 2:
+            frontier = QueueFrontier()
+        else:
+            raise ValueError('This is not a valid algorithm')
         frontier.add(start)
 
         # Initialize an empty explored set
