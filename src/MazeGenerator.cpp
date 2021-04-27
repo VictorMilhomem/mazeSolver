@@ -24,7 +24,7 @@ void Initialize(){
         else 
 		    for (p=1; p<=i; p++) {if (rand()%100 > 10) L[p][l]='#';  }
     }
-    xi= n/2; yi = rand()%(n-2)+2;  xf = rand()%(n-2)+2;  yf = n;
+    xi= 1; yi = rand()%(n-2)+2;  xf = rand()%(n-2)+2;  yf = n;
     L[xi][yi] = 'A';  L[xf][yf]='B';
 }
 
@@ -45,12 +45,13 @@ void CreateMazeFile()
 int main(){
 	srand(time(NULL));
     while (true){
-        cout<<"Mazes Dimensions(-1 to stop):  n =";  cin >>n;
+        cout<<"Mazes Dimensions:  n =";  cin >>n;
         if (n > 0)
         {
     	    Initialize();
             CreateMazeFile();  
 		    cin.get();
+            break;
         }
         else
         {
