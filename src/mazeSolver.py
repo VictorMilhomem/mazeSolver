@@ -158,7 +158,7 @@ class Maze():
 
                 # Goal
                 elif (i, j) == self.goal:
-                    fill = (0, 171, 28)
+                    fill = (0, 255, 0)
 
                 # Solution
                 elif solution is not None and show_solution and (i, j) in solution:
