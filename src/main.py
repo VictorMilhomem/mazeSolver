@@ -3,8 +3,8 @@ from mazeSolver import *
 def intro():
     print("############### MAZE SOLVER ###############")
     print("          CHOOSE THE ALGORITHM TO SOLVE THE MAZE")
-    print("   1 - Stack Algorithm")
-    print("   2 - Queue Algorithm")
+    print("   1 - Depth-first Search Algorithm")
+    print("   2 - Breadth-first Search Algorithm")
     while True:
         algorithm = input("Algorithm selection: ")
         if algorithm.isdigit():
