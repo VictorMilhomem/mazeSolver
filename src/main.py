@@ -3,7 +3,7 @@ from mazeSolver import *
 if __name__ == "__main__":
     try:
         if len(sys.argv) != 2:
-            sys.exit("Usage: python maze.py maze.txt")
+            sys.exit("Usage: python maze.py ./mazes/maze.txt")
 
         maze = Maze(sys.argv[1])
         print("Maze:")
