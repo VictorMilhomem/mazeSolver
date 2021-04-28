@@ -1,5 +1,6 @@
 from mazeSolver import *
 import time
+import os
 
 def intro():
     print("######################################### MAZE SOLVER ##############################")
@@ -41,7 +42,8 @@ def run(algorithm):
         maze.print()
         maze.output_image("maze.png", show_explored=True)
     except:
-        print("Unexpected ERROR")
+        os.system('cls' if os.name == 'nt' else 'clear')
+        print("Unexpected ERROR\n")
         sys.exit()
 
 
