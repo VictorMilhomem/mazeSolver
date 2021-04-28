@@ -154,17 +154,17 @@ int main(){
 
         // set grid
         grid[locY][locX] = ' ';
-        //output grid to show creation
-        //printGrid(grid);
         //reset nGood value
                 nGood = 0;
 
     }while(!xValues.empty());
+
+    // create the starting and ending points
     int xi, yi, xf, yf; 
-    xi= rand()%SIZEX+1; yi = rand()%SIZEY+1;  xf = rand()%SIZEX+1;  yf = SIZEY;
+    xi= rand()%SIZEX; yi = rand()%SIZEY;  xf = rand()%SIZEX;  yf = SIZEY;
     grid[xi][yi] = 'A';  grid[xf][yf]='B';
     CreateMazeFile(grid);
     //final maze output
-    printGrid(grid);
+    //printGrid(grid);
     return 0;
 }
