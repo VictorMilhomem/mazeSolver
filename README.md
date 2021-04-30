@@ -1,6 +1,6 @@
 # Maze Solver
 ## Pre requirements
-	You need to have python 3.x and gcc compiler installed 
+	python 3.x and gcc compiler installed 
 ## Instalation
 	1- install the python environment requirements:
 		pip install -r requirements.txt
