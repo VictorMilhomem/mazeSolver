@@ -14,7 +14,7 @@
 	the first option is the Depth-first search algorithm
 	and the second option is the breadth-first search algorithm.
 ## How to run
-	1- If you want to create a new maze, you will need to run the compiled cpp file:
+	1- To create a new maze, run the compiled cpp file:
 		LINUX or MACOS : ./a.out
 		WINDOWS : ./a.exe
 
