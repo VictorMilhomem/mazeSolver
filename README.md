@@ -9,7 +9,7 @@
 		g++ mazeGenerator.cpp
 
 ## About The Program 
-	This program is a terminal based maze solver.
+	This is a terminal based maze solver program.
 	The program works with two options of algorithms to solve the maze,
 	the first option is the Depth-first search algorithm
 	and the second option is the breadth-first search algorithm.
