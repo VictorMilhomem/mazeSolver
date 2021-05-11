@@ -1,12 +1,17 @@
 # Maze Solver
 ## Pre requirements
-	python 3.x and gcc compiler installed 
+	python 3.x and gcc compiler installed and make
 ## Instalation
-	1- install the python environment requirements:
+	1- install the python environment requirements(global or inside a venv):
 		pip install -r requirements.txt
 
 	2- compile the cpp program:
-		g++ mazeGenerator.cpp
+		make
+		
+	3- On linux type:
+		make install
+	OBS: If a virtual enviroment (venv) was created, activate the venv, otherwise the program will not work.
+	
 
 ## About The Program 
 	This is a terminal based maze solver program.
@@ -14,8 +19,9 @@
 	the first option is the Depth-first search algorithm
 	and the second option is the breadth-first search algorithm.
 ## How to run
-	 - To run the solver:
-		python3 main.py ./mazes/maze.txt
+	 - To run the solver on terminal:
+		Linux: maze
+		Windows: maze.exe
 ## Depth-first search
 	Depth-first search (DFS) is an algorithm for traversing or
 	searching tree or graph data structures. The algorithm starts 
