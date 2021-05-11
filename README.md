@@ -4,12 +4,14 @@
 ## Instalation
 	1- install the python environment requirements(global or inside a venv):
 		pip install -r requirements.txt
+		
+	2- navigate to the source files:
+		cd src
 
-	2- compile the cpp program:
-		navigate to the source files
+	3- compile the cpp program:
 		make
 		
-	3- On linux type:
+	4- On linux type:
 		make install
 	OBS: If a virtual enviroment (venv) was created, activate the venv, otherwise the program will not work.
 	
