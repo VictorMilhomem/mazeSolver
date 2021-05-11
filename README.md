@@ -6,7 +6,7 @@
 		pip install -r requirements.txt
 
 	2- compile the cpp program:
-		navigates to the source files
+		navigate to the source files
 		make
 		
 	3- On linux type:
