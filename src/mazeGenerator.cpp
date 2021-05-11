@@ -164,6 +164,8 @@ int main(){
     xi= rand()%SIZEX; yi = rand()%SIZEY;  xf = rand()%SIZEX;  yf = SIZEY;
     grid[xi][yi] = 'A';  grid[xf][yf]='B';
     CreateMazeFile(grid);
+
+    system("python main.py ./mazes/maze.txt");
     //final maze output
     //printGrid(grid);
     return 0;

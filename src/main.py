@@ -20,7 +20,7 @@ def intro():
     return algorithm
         
 def run(algorithm):
-    os.system('a.exe' if os.name == 'nt' else './a.out')
+    #os.system('a.exe' if os.name == 'nt' else './a.out')
     try:
         if len(sys.argv) != 2:
             sys.exit("Usage: python main.py ./mazes/maze.txt")
