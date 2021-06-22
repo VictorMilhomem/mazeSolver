@@ -23,5 +23,5 @@
 	and the second option is the breadth-first search algorithm.
 ## How to run
 	 - To run the solver on terminal:
-		Linux: maze
+		Linux: ./maze
 		Windows: maze.exe
